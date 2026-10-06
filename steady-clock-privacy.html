@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Steady Clock</title>
+<style>
+  :root {
+    --bg: #f7f6f3;
+    --surface: #ffffff;
+    --text: #191a1d;
+    --muted: #5a5f68;
+    --accent: #1d6d49;
+    --line: #e3e1db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101114;
+      --surface: #17181c;
+      --text: #e6e7ea;
+      --muted: #a6abb4;
+      --accent: #7fd3ac;
+      --line: #2a2d33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 2.25rem clamp(1.1rem, 4vw, 2.75rem) 2.75rem;
+  }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.2; margin: 0 0 .4rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0 0 2rem; }
+  .lede {
+    font-size: 1.08rem;
+    border-left: 3px solid var(--accent);
+    padding: .1rem 0 .1rem 1rem;
+    margin: 0 0 1.75rem;
+  }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: var(--bg); padding: .1rem .35rem; border-radius: 5px; font-size: .88em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .88rem; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Steady Clock for Android · Last updated 6 October 2026</p>
+
+  <p class="lede">
+    SDProjects does not collect, sell or share personal data through Steady Clock. There is no
+    account to create, no analytics, no advertising and no third-party tracking of any kind.
+  </p>
+
+  <h2>Offline operation</h2>
+  <p>
+    Steady Clock does not request the Android <code>INTERNET</code> permission. An Android app
+    without that permission cannot make its own direct Internet connections. Its city search
+    uses a database bundled with the app. Android system backup is separate and is described below.
+  </p>
+
+  <h2>What the app stores, and where</h2>
+  <p>
+    Everything Steady Clock remembers is written to its own private storage area on your device,
+    protected by Android's application sandbox. SDProjects does not receive these records.
+  </p>
+  <ul>
+    <li>The clocks you have added, and the name you gave your home clock</li>
+    <li>Your settings — clock format, stopwatch and timer preferences, theme</li>
+    <li>Your saved timer presets</li>
+    <li>The current state of the stopwatch and timer, so they survive being closed</li>
+  </ul>
+  <p>
+    Uninstalling the app removes its local data; Android may retain a system backup and restore
+    backed-up preferences when you reinstall. You can also clear local data at any time from
+    Settings&nbsp;→&nbsp;Apps&nbsp;→&nbsp;Simple&nbsp;Watch&nbsp;→&nbsp;Storage.
+  </p>
+
+  <h2>Android backup</h2>
+  <p>
+    If you have Android’s own backup feature switched on, your settings and saved clocks may be
+    included in the backup that <em>your</em> device makes to <em>your</em> Google account. That
+    backup belongs to you and is governed by
+    <a href="https://policies.google.com/privacy">Google’s privacy policy</a>, not by us — we
+    never receive it and cannot access it. You can disable it in your Android backup settings.
+  </p>
+
+  <h2>Permissions, and why each one exists</h2>
+  <table>
+    <tr><th>Permission</th><th>Why the app asks</th></tr>
+    <tr>
+      <td><code>POST_NOTIFICATIONS</code></td>
+      <td>To display the running timer and its completion alert. If you decline, timer
+          notifications will not appear in the notification shade.</td>
+    </tr>
+    <tr>
+      <td><code>USE_EXACT_ALARM</code><br><code>SCHEDULE_EXACT_ALARM</code> on Android 12</td>
+      <td>So a countdown fires at the right second even if the screen is off or the system has
+          put the app to sleep. This is the core function of a timer.</td>
+    </tr>
+    <tr>
+      <td><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+      <td>To keep a running timer alive and visible in your notification shade, and to sound the
+          alert when it finishes.</td>
+    </tr>
+    <tr>
+      <td><code>VIBRATE</code></td>
+      <td>Haptic feedback on the stopwatch, and vibration when a timer ends. Both can be turned
+          off in Settings.</td>
+    </tr>
+    <tr>
+      <td><code>WAKE_LOCK</code></td>
+      <td>To keep the device awake while the timer alert is ringing, for up to about five minutes.</td>
+    </tr>
+  </table>
+  <p>
+    Steady Clock does not request access to your location, contacts, camera, microphone, files
+    or any other personal data. The list of cities in the app is a fixed file inside the app
+    itself; searching it never leaves your device.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Steady Clock does not collect personal data from children or other users.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    Updates to this policy will be posted on this page with a revised date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Steady Clock is provided by SDProjects. Questions about this policy, local data deletion
+    or the app: <a href="mailto:sdprojects1985@gmail.com">sdprojects1985@gmail.com</a>.
+    We have no app account or server-side user records to delete. If you contact us by email,
+    we receive your email address and message to respond to your request. Please avoid sending
+    unnecessary personal information. You may request deletion of that correspondence.
+  </p>
+
+  <footer>
+    Steady Clock — a clock, stopwatch and timer whose buttons never move.
+  </footer>
+
+</main>
+</body>
+</html>
