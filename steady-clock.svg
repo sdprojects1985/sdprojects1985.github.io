@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
-  <rect width="108" height="108" fill="#123E2D"/>
-  <circle cx="54" cy="54" r="29" fill="none" stroke="#B9F0D2" stroke-width="5"/>
-  <path d="M54 36V54L67 62" fill="none" stroke="#F7F6F3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="54" cy="54" r="3.8" fill="#F7F6F3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Steady Clock — soft mint with inset pivot</title>
+  <desc id="desc">A forest green clock icon with a mint ring and shorter mint hour hand, a longer pale mint minute hand, and a small forest green circle at the center of the mint hub.</desc>
+  <rect width="256" height="256" rx="57" fill="#123F32"/>
+  <circle cx="128" cy="128" r="74" fill="none" stroke="#B5E4CF" stroke-width="11"/>
+  <path d="M128 128 L97 106" fill="none" stroke="#B5E4CF" stroke-width="13" stroke-linecap="round"/>
+  <path d="M128 128 L178 99" fill="none" stroke="#E0F5E8" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="128" cy="128" r="7" fill="#B5E4CF"/>
+  <circle cx="128" cy="128" r="3.5" fill="#123F32"/>
 </svg>
+
