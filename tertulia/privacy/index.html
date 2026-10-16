@@ -6,6 +6,8 @@
 <meta name="color-scheme" content="light dark">
 <title>Privacy Policy — Tertulia</title>
 <meta name="description" content="Privacy policy of Tertulia, an independent Spanish-language chat app for the Chat Hispano network.">
+<link rel="icon" type="image/png" sizes="192x192" href="/tertulia/icon-192.png">
+<link rel="apple-touch-icon" href="/tertulia/icon-192.png">
 <link rel="canonical" href="https://sdprojects1985.github.io/tertulia/privacy/">
 <link rel="alternate" hreflang="en" href="https://sdprojects1985.github.io/tertulia/privacy/">
 <link rel="alternate" hreflang="es" href="https://sdprojects1985.github.io/tertulia/privacidad/">
@@ -142,11 +144,14 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
   <p>Stored <strong>only on your phone</strong>:</p>
   <ul>
     <li>nickname, connection preferences and settings (theme, text size, alerts);</li>
-    <li>favourites and your list of blocked or ignored users;</li>
-    <li>the <strong>private message history</strong>, encrypted with a key protected by the Android Keystore, kept for the retention period you choose in Settings;</li>
-    <li>the last-session state (for example, the room you were in).</li>
+    <li>your favourites and your list of muted or blocked users, which may include, if the app has seen it, the person's <strong>connection address</strong> (as the network shows it, normally an obscured name) so that a nickname change does not undo the block; it is never shown on screen or sent anywhere;</li>
+    <li>the <strong>private message history</strong>, up to 5,000 lines per conversation (or fewer, depending on your Settings);</li>
+    <li>the last nickname and rooms of your last session;</li>
+    <li>the fact that you accepted the rules and confirmed you are 18 or over (version and time), and a counter of reports prepared (no names or text).</li>
   </ul>
-  <p>Tertulia <strong>disables Android backups</strong> (cloud and device-to-device) for this data: it does not leave your phone. None of this data is sent to any server of ours.</p>
+  <p>Your favourites, lists, history, last session and acceptance of the rules are stored <strong>encrypted</strong> with a key protected by the Android Keystore. Encryption protects your data if someone copies the app's files; it does not protect against an unlocked rooted phone, malicious apps with screen access, screenshots you take yourself, or the logs the chat network keeps.</p>
+  <p>Tertulia <strong>disables Android backups</strong> (cloud and device-to-device) for this data: it does not leave your phone. None of it is sent to any server of ours.</p>
+  <p>By default, while the phone is locked, notifications do not show who wrote or the text ("<span lang="es">Nuevo mensaje</span>"), and the app blocks screenshots on the connect screen and in private chats. You can change this in Settings; what Android shows on the lock screen also depends on your phone's own settings.</p>
 
   <h2>7. Permissions</h2>
   <ul>
@@ -157,16 +162,16 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
   <p>Tertulia does not ask for access to your contacts, location, camera, microphone, photos or files.</p>
 
   <h2>8. Moderation, blocking and reports</h2>
-  <p>Rooms are moderated by the <strong>chat network's operators</strong>, not by Tertulia. You can <strong>ignore or block</strong> any user (stored on your phone only) and <strong>report</strong> a user: "Report" prepares a message for the network's operators (or opens their contact form) with the context you choose to include; <strong>you send it</strong>, and they handle it under their own rules. Tertulia does not receive those reports.</p>
+  <p>Rooms are moderated by the <strong>chat network's operators</strong>, not by Tertulia. You can <strong>ignore or block</strong> any user (stored on your phone only) and <strong>report</strong> a user. Before a report is used, the app shows you the exact text (reason, nickname, room, time and, only if you tick them, a note from you and the last lines of the room) and you choose what to do: <strong>copy it</strong> to paste into the network's contact form (the app copies it to the clipboard and opens that page in your browser; the app sends nothing to that page) or, if the network allows it, <strong>post it as a message</strong> in the network's help channel, which is public. What you write in a report is shared with the network like any other message. Tertulia does not receive those reports and cannot confirm that anyone reads them. Only a counter of reports prepared stays on your phone.</p>
 
   <h2>9. Retention and deletion</h2>
-  <p>We keep none of your data on servers of our own, so there is nothing for us to delete. On your phone you can delete a chat's history or <strong>all data</strong> from Settings ("<span lang="es">Borrar todo</span>"), or uninstall the app, which removes all local data. Data the chat network already received (messages, nickname, technical logs) is kept by the network under its own rules; to ask for its deletion, contact the network's operators (the #Opers_Help room or their contact form, chathispano.com/contactar/).</p>
+  <p>We keep none of your data on servers of our own, so there is nothing for us to delete. On your phone you can delete <strong>all your data</strong> from Settings ("<span lang="es">Borrar todos mis datos</span>"), which closes the session and removes the history, favourites, lists, settings and the encryption key, or uninstall the app, which removes all local data. Data the chat network already received (messages, nickname, technical logs) is kept by the network under its own rules; to ask for its deletion, contact the network's operators (the #Opers_Help room or their contact form, chathispano.com/contactar/).</p>
 
   <h2>10. Your rights</h2>
   <p>Because Tertulia keeps no database of your personal data, we hold no data about you to access, correct or erase. If you believe we process personal data about you, write to <a href="mailto:sdprojects1985@gmail.com">sdprojects1985@gmail.com</a> and we will respond as applicable law requires (including the GDPR, if you live in the European Economic Area). You may also complain to your data protection authority (in Spain, the Agencia Española de Protección de Datos, aepd.es).</p>
 
   <h2>11. Minors</h2>
-  <p>Tertulia is only for people aged 18 or over and asks you to confirm your age before you enter. If you know a minor is using it, tell us so we can act.</p>
+  <p>Tertulia is only for people aged 18 or over and asks you to confirm your age and accept the rules before you enter. The app does not check your age: it is your own statement, and the fact that you made it is stored on your phone. If you know a minor is using it, tell us so we can act.</p>
 
   <h2>12. Changes to this policy</h2>
   <p>If data handling changes (for example, if ads, purchases or an account are added), we will update this policy and the "last updated" date, and notify you inside the app when the change is significant.</p>
