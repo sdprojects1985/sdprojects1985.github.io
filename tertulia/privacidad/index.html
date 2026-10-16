@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Tertulia</title>
+<meta name="description" content="Política de privacidad de Tertulia, aplicación independiente de chat en español para la red Chat Hispano.">
+<link rel="canonical" href="https://sdprojects1985.github.io/tertulia/privacidad/">
+<link rel="alternate" hreflang="es" href="https://sdprojects1985.github.io/tertulia/privacidad/">
+<link rel="alternate" hreflang="en" href="https://sdprojects1985.github.io/tertulia/privacy/">
+<style>
+  :root {
+    --bg: #f7f6f3;
+    --surface: #ffffff;
+    --text: #191a1d;
+    --muted: #5a5f68;
+    --accent: #1d6d49;
+    --line: #e3e1db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101114;
+      --surface: #17181c;
+      --text: #e6e7ea;
+      --muted: #a6abb4;
+      --accent: #7fd3ac;
+      --line: #2a2d33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 1.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .topnav {
+    max-width: 44rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .35rem .75rem;
+    font-size: .92rem;
+    color: var(--muted);
+  }
+  .topnav .lang { margin-left: auto; }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 2.25rem clamp(1.1rem, 4vw, 2.75rem) 2.75rem;
+    overflow-wrap: anywhere;
+  }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.2; margin: 0 0 .4rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0 0 2rem; }
+  .lede {
+    font-size: 1.08rem;
+    border-left: 3px solid var(--accent);
+    padding: .1rem 0 .1rem 1rem;
+    margin: 0 0 1.75rem;
+  }
+  code { background: var(--bg); padding: .1rem .35rem; border-radius: 5px; font-size: .88em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  footer { color: var(--muted); font-size: .88rem; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="Navegación">
+  <a href="/">SDProjects</a><span aria-hidden="true">›</span><a href="/tertulia/">Tertulia</a>
+  <a class="lang" href="/tertulia/privacy/" hreflang="en" lang="en">English</a>
+</nav>
+<main>
+
+  <h1>Política de privacidad de Tertulia</h1>
+  <p class="meta"><strong>Última actualización:</strong> 16 de octubre de 2026<br>
+    <strong>Responsable:</strong> SD Projects (desarrollador independiente) · Contacto: <a href="mailto:sdprojects1985@gmail.com">sdprojects1985@gmail.com</a><br>
+    <strong>Aplicación:</strong> Tertulia: chat en español (Android, identificador <code>com.hispano.ircchat</code>)</p>
+
+
+  <h2>1. Qué es Tertulia</h2>
+  <p>Tertulia es una aplicación independiente de chat en español. Sirve para conectarte, con un apodo, a la red de chat IRC Chat Hispano (IRC-Hispano) y hablar en salas, mensajes privados y con tus contactos. <strong>Tertulia no está afiliada, patrocinada ni respaldada por Chat Hispano / IRC-Hispano</strong>: solo usa su red, que es un servicio de un tercero.</p>
+  <p>Tertulia es solo para <strong>mayores de 18 años</strong>. No está dirigida a menores y no recogemos conscientemente datos de menores.</p>
+
+  <h2>2. Resumen</h2>
+  <ul>
+    <li>No hay cuenta de Tertulia: entras con un apodo. No pedimos nombre real, correo ni teléfono.</li>
+    <li>No tenemos servidores propios, ni anuncios, ni analítica, ni rastreadores.</li>
+    <li>Lo que escribes viaja a los servidores de la red de chat (un tercero) y lo ven los demás participantes de la sala o de la conversación.</li>
+    <li>La conexión va cifrada (TLS) por defecto.</li>
+    <li>Tus datos locales (apodo, favoritos, bloqueados, ajustes e historial privado cifrado) se quedan en tu móvil y no se incluyen en copias de seguridad.</li>
+  </ul>
+
+  <h2>3. Datos que Tertulia NO recoge</h2>
+  <p>Tertulia no recoge, no almacena en servidores propios ni vende: cuentas, nombre real, correo, teléfono, ubicación, contactos del teléfono, fotos, micrófono, cámara, identificador de publicidad ni datos de analítica o fallos. No incluye SDK de anuncios ni de analítica. No hay perfiles ni seguimiento entre aplicaciones.</p>
+
+  <h2>4. Datos que se envían a la red de chat</h2>
+  <p>Para chatear, la app envía a los servidores de la red de chat, de forma temporal y solo mientras estás conectado:</p>
+  <ul>
+    <li>tu <strong>apodo</strong> y el nombre de usuario técnico que usa el protocolo IRC;</li>
+    <li>los <strong>mensajes</strong> que escribes (en salas y privados) y los comandos que ejecutas (entrar a una sala, ignorar, etc.);</li>
+    <li>datos técnicos de la conexión, como tu <strong>dirección IP</strong>, que los servidores ven inevitablemente al conectarte.</li>
+  </ul>
+  <p>Estos servidores <strong>pertenecen y los opera un tercero</strong> (Chat Hispano). Tertulia no controla qué registra la red ni durante cuánto tiempo; pueden guardar registros técnicos, como tu dirección IP. Las reglas y la política de esa red se aplican a ese tratamiento. Lo que escribes en una sala es <strong>público para quienes están en ella</strong>, y otras personas pueden copiarlo o guardarlo fuera de nuestro control. No escribas datos que no quieras compartir.</p>
+  <p>Si registras tu apodo en la red (servicio NickServ, <strong>opcional</strong>), la contraseña y el correo que des para ese registro los gestiona la red, no Tertulia. La app puede enviar tu contraseña de NickServ a la red para identificarte, <strong>solo por una conexión cifrada</strong>: nunca la envía sin cifrar.</p>
+
+  <h2>5. Cifrado de la conexión</h2>
+  <p>Tertulia se conecta por defecto con <strong>TLS</strong> (cifrado en tránsito), de modo que otras personas en tu misma red Wi-Fi no puedan leer tus mensajes. Si el servidor seguro no responde, la app <strong>no cambia a una conexión sin cifrar por su cuenta</strong>: te avisa y solo continúa sin cifrar si tú lo aceptas expresamente. Mientras la conexión no esté cifrada, la app lo muestra con un indicador visible («NO CIFRADO») y no envía contraseñas. Aun cifrada, la red de chat recibe tus mensajes en claro porque es el destinatario del servicio.</p>
+
+  <h2>6. Datos que se guardan en tu dispositivo</h2>
+  <p>Se guardan <strong>solo en tu móvil</strong>:</p>
+  <ul>
+    <li>apodo, preferencias de conexión y ajustes (tema, tamaño de texto, avisos);</li>
+    <li>favoritos y lista de usuarios bloqueados o ignorados;</li>
+    <li>el <strong>historial de mensajes privados</strong>, cifrado con una clave protegida por el Android Keystore, con el periodo de conservación que elijas en Ajustes;</li>
+    <li>el estado de la última sesión (por ejemplo, la sala en la que estabas).</li>
+  </ul>
+  <p>Tertulia <strong>desactiva las copias de seguridad</strong> de Android (en la nube y de dispositivo a dispositivo) para estos datos: no salen de tu móvil. Estos datos no se envían a ningún servidor nuestro.</p>
+
+  <h2>7. Permisos</h2>
+  <ul>
+    <li><strong>Internet y estado de la red:</strong> para conectarte a la red de chat y detectar si hay conexión.</li>
+    <li><strong>Notificaciones:</strong> para avisarte de mensajes privados, menciones y contactos que se conectan. Puedes denegar el permiso o desactivar cada tipo de aviso en Ajustes.</li>
+    <li><strong>Servicio en primer plano (uso especial):</strong> para mantener abierta la conexión con la pantalla apagada y poder avisarte. Mientras funciona, se muestra una notificación permanente con el botón <strong>Desconectar</strong>, que cierra la conexión y detiene el servicio.</li>
+  </ul>
+  <p>Tertulia no pide acceso a tus contactos, ubicación, cámara, micrófono, fotos ni archivos.</p>
+
+  <h2>8. Moderación, bloqueo e informes</h2>
+  <p>La moderación de las salas la hacen los <strong>operadores de la red de chat</strong>, no Tertulia. Puedes <strong>ignorar o bloquear</strong> a cualquier usuario (se guarda solo en tu móvil) y <strong>reportar</strong> a un usuario: la función «Reportar» prepara un mensaje para los operadores de la red (o abre su formulario de contacto) con el contexto que tú decidas incluir; <strong>lo envías tú</strong>, y tratan el informe según sus propias normas. Tertulia no recibe esos informes.</p>
+
+  <h2>9. Conservación y borrado</h2>
+  <p>No guardamos tus datos en servidores propios, así que no hay nada que borrar de nuestra parte. En tu móvil puedes borrar el historial de un chat o <strong>todos los datos</strong> desde Ajustes («Borrar todo»), o desinstalar la aplicación, lo que elimina todos los datos locales. Los datos que ya recibió la red de chat (mensajes, apodo, registros técnicos) los conserva la red según sus propias normas; para solicitar su borrado, contacta con los operadores de la red (sala #Opers_Help o su formulario de contacto, chathispano.com/contactar/).</p>
+
+  <h2>10. Tus derechos</h2>
+  <p>Como Tertulia no mantiene ninguna base de datos con tus datos personales, no tenemos datos tuyos que consultar, rectificar o suprimir. Si crees que tratamos datos personales tuyos, escríbenos a <a href="mailto:sdprojects1985@gmail.com">sdprojects1985@gmail.com</a> y lo atenderemos conforme a la normativa aplicable (incluido el RGPD, si resides en el Espacio Económico Europeo). También puedes reclamar ante tu autoridad de protección de datos (en España, la Agencia Española de Protección de Datos, aepd.es).</p>
+
+  <h2>11. Menores</h2>
+  <p>Tertulia es solo para personas de 18 años o más y pide confirmar la edad antes de entrar. Si sabes que un menor la está usando, avísanos para que podamos actuar.</p>
+
+  <h2>12. Cambios en esta política</h2>
+  <p>Si cambia el tratamiento de datos (por ejemplo, si se añaden anuncios, compras o una cuenta), actualizaremos esta política y la fecha de «última actualización», y avisaremos dentro de la app cuando el cambio sea importante.</p>
+
+  <h2>13. Contacto</h2>
+  <p>SD Projects · <a href="mailto:sdprojects1985@gmail.com">sdprojects1985@gmail.com</a></p>
+
+  <footer>
+    <a href="/tertulia/">Tertulia</a> ·
+    <a href="/tertulia/seguridad-infantil/">Estándares de seguridad infantil</a> ·
+    <a href="/">Inicio de SDProjects</a>
+  </footer>
+
+</main>
+</body>
+</html>
