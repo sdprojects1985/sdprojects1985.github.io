@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="SDProjects crea software centrado en lo esencial para el día a día. Nuestros productos: Steady Clock y Tertulia.">
+<title>SDProjects — Software con un propósito claro</title>
+<link rel="icon" href="/sdprojects.svg" type="image/svg+xml">
+<link rel="canonical" href="https://sdprojects1985.github.io/es/">
+<link rel="alternate" hreflang="en" href="https://sdprojects1985.github.io/">
+<link rel="alternate" hreflang="es" href="https://sdprojects1985.github.io/es/">
+<link rel="alternate" hreflang="x-default" href="https://sdprojects1985.github.io/">
+<script>
+/* Language choice: saved choice first, then the browser language. English goes to the twin page. No cookies, no tracking. */
+(function(){var P='es',T='/',K='sdp-lang',w=null,l=location;
+try{w=localStorage.getItem(K)}catch(e){}
+if(w!='es'&&w!='en'){var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';w=/^es([-_]|$)/i.test(n)?'es':'en'}
+if(w!=P&&!/[?&]lang=|#nolang/.test(l.search+l.hash))l.replace(T+l.search+l.hash);
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.lang');if(a)try{localStorage.setItem(K,a.getAttribute('hreflang'))}catch(x){}})})();
+</script>
+<style>
+/* Studio theme "graphite + indigo". Products bring their own colours (.product--NAME blocks below). Same style as the English home (../index.html). */
+:root{color-scheme:light dark;--paper:#f8f7f4;--surface:#ffffff;--ink:#1d1c24;--muted:#5f5c68;--line:#e2e0e6;--accent:#3d3a9e}
+/* Product colours, light. Add one block per product, plus its dark block in the media query. */
+.product--steady{--band:#123F32;--band-ink:#B5E4CF;--chip-bg:#ecf3ec;--chip-ink:#153d2d;--btn-bg:#123F32;--btn-ink:#ffffff;--p-link:#153d2d}
+.product--tertulia{--band:#0F2440;--band-ink:#FBF6EC;--band-accent:#FF7F6B;--chip-bg:#FFE8E2;--chip-ink:#B53622;--btn-bg:#CC3F29;--btn-ink:#ffffff;--p-link:#B53622}
+@media(prefers-color-scheme:dark){
+:root{--paper:#121117;--surface:#1b1a21;--ink:#ecebf0;--muted:#a9a6b3;--line:#2c2a33;--accent:#a9a5f5}
+.product--steady{--chip-bg:#1f3a2f;--chip-ink:#B5E4CF;--btn-bg:#B5E4CF;--btn-ink:#123F32;--p-link:#B5E4CF}
+.product--tertulia{--chip-bg:#4A2C3A;--chip-ink:#FF9A8A;--btn-bg:#FF7F6B;--btn-ink:#1D0C08;--p-link:#FF9A8A}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit;text-underline-offset:5px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+header,main,footer{max-width:1160px;margin:auto;padding-left:40px;padding-right:40px}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;padding-top:28px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:12px;font-size:22px;font-weight:750;letter-spacing:-1px;text-decoration:none}
+.brand img{width:34px;height:34px}
+nav{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;margin-left:auto}
+nav a{color:var(--accent)}
+.lang{font-size:15px;font-weight:600;line-height:1.3;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:5px 14px}
+.lang:hover{border-color:var(--accent)}
+.hero{padding:80px 0 64px;max-width:840px}
+.eyebrow{margin:0;font-size:13px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(44px,6.4vw,78px);line-height:1.08;letter-spacing:-3.5px;font-weight:650;margin:22px 0 28px}
+h1 span{color:var(--accent)}
+.intro{font-size:22px;max-width:650px;color:var(--muted);margin:0}
+.products h2{font-size:13px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:28px}
+.product{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.band{background:var(--band);color:var(--band-ink);display:flex;align-items:center;justify-content:center;min-height:190px}
+.band img{width:130px;height:130px}
+.wordmark{text-align:center;line-height:1.1}
+.wordmark b{display:block;font-size:46px;font-weight:700;letter-spacing:-1.5px}
+.wordmark i{display:block;width:56px;height:5px;border-radius:3px;background:var(--band-accent);margin:14px auto 0}
+.wordmark span{display:block;margin-top:12px;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--band-accent)}
+.pbody{display:flex;flex-direction:column;flex:1;padding:30px 34px 32px}
+.chip{align-self:flex-start;font-size:13px;line-height:1.4;font-weight:600;background:var(--chip-bg);color:var(--chip-ink);border-radius:99px;padding:5px 14px}
+.product h3{font-size:34px;letter-spacing:-1.2px;line-height:1.2;margin:14px 0 10px}
+.product p{margin:0 0 14px;color:var(--muted);font-size:17px;line-height:1.6}
+.product .fine{font-size:14px}
+.actions{margin-top:auto;padding-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
+.btn{display:inline-block;background:var(--btn-bg);color:var(--btn-ink);font-weight:650;font-size:16px;text-decoration:none;border-radius:99px;padding:10px 24px}
+.mini{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:15px}
+.mini a{color:var(--p-link)}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:64px 0}
+.principles h3{font-size:18px;margin:0 0 8px}
+.principles p{font-size:16px;color:var(--muted);margin:0}
+footer{padding-top:28px;padding-bottom:36px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:14px;color:var(--muted)}
+footer a{color:var(--accent)}
+@media(max-width:700px){header,main,footer{padding-left:24px;padding-right:24px}nav{gap:8px 16px;order:3;flex-basis:100%;margin-left:0}.lang{order:2;margin-left:auto}h1{letter-spacing:-2px}.hero{padding:56px 0 48px}.principles{grid-template-columns:1fr;gap:28px}.pbody{padding:26px}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="/es/"><img src="/sdprojects.svg" width="34" height="34" alt="">SDProjects</a><nav aria-label="Navegación principal"><a href="#products">Productos</a><a href="mailto:sdprojects1985@gmail.com">Contacto</a></nav><a class="lang" href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<section class="hero"><p class="eyebrow">Estudio de software independiente</p><h1>Útil por diseño.<br><span>Sencillo por elección.</span></h1><p class="intro">Creamos herramientas centradas en lo esencial para el día a día. Controles claros, detalles cuidados y un propósito fácil de entender.</p></section>
+<section class="products" id="products" aria-labelledby="products-title"><h2 id="products-title">Productos</h2><div class="grid">
+<!-- Copia este bloque para un producto nuevo. Después añade un bloque de color .product--NAME (claro y oscuro) en el CSS y cambia la clase de abajo. -->
+<article class="product product--steady"><div class="band"><img src="/steady-clock.svg?v=2" width="130" height="130" alt=""></div><div class="pbody"><span class="chip">En preparación para Android</span><h3>Steady Clock</h3><p>Reloj mundial, cronómetro y temporizador con controles grandes y familiares. Compara zonas horarias, registra vueltas e introduce una cuenta atrás en segundos.</p><div class="actions"><a class="btn" href="/steady-clock/es/">Más información</a><div class="mini"><a href="/steady-clock-privacy.html" hreflang="en">Privacidad (en inglés)</a><a href="mailto:sdprojects1985@gmail.com?subject=Soporte%20Steady%20Clock">Soporte</a></div></div></div></article>
+<article class="product product--tertulia"><div class="band" aria-hidden="true"><div class="wordmark"><b>Tertulia</b><i></i><span>Chat en español</span></div></div><div class="pbody"><span class="chip">Próximamente en Google Play</span><h3>Tertulia</h3><p>Aplicación independiente de chat en español para la red IRC Chat Hispano. Entra solo con un apodo: sin cuenta de Tertulia, sin servidores nuestros, y tus ajustes y tu historial privado cifrado se quedan en tu móvil.</p><p class="fine">Solo para mayores de 18 años. No está afiliada a Chat Hispano.</p><div class="actions"><a class="btn" href="/tertulia/">Más información</a><div class="mini"><a href="/tertulia/privacidad/">Privacidad</a><a href="mailto:sdprojects1985@gmail.com?subject=Soporte%20Tertulia">Soporte</a></div></div></div></article>
+</div></section>
+<section class="principles" aria-label="Nuestro enfoque"><div><h3>Que sea familiar</h3><p>Los controles de uso diario deben ser fáciles de encontrar y predecibles.</p></div><div><h3>Respeto por tu atención</h3><p>El software debe ayudarte a terminar lo que has venido a hacer.</p></div><div><h3>Que cada función cuente</h3><p>Una herramienta enfocada se gana su sitio haciendo bien su trabajo.</p></div></section>
+</main>
+<footer><span>© 2026 SDProjects</span><a href="mailto:sdprojects1985@gmail.com">sdprojects1985@gmail.com</a></footer>
+</body></html>

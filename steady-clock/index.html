@@ -6,6 +6,18 @@
 <meta name="description" content="Steady Clock: a world clock, stopwatch and timer with large, familiar controls. Compare time zones, record laps and type a countdown in seconds.">
 <title>Steady Clock — SDProjects</title>
 <link rel="icon" href="/steady-clock.svg?v=2" type="image/svg+xml">
+<link rel="canonical" href="https://sdprojects1985.github.io/steady-clock/">
+<link rel="alternate" hreflang="en" href="https://sdprojects1985.github.io/steady-clock/">
+<link rel="alternate" hreflang="es" href="https://sdprojects1985.github.io/steady-clock/es/">
+<link rel="alternate" hreflang="x-default" href="https://sdprojects1985.github.io/steady-clock/">
+<script>
+/* Language choice: saved choice first, then the browser language. Spanish goes to the twin page. No cookies, no tracking. */
+(function(){var P='en',T='/steady-clock/es/',K='sdp-lang',w=null,l=location;
+try{w=localStorage.getItem(K)}catch(e){}
+if(w!='es'&&w!='en'){var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';w=/^es([-_]|$)/i.test(n)?'es':'en'}
+if(w!=P&&!/[?&]lang=|#nolang/.test(l.search+l.hash))l.replace(T+l.search+l.hash);
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.lang');if(a)try{localStorage.setItem(K,a.getAttribute('hreflang'))}catch(x){}})})();
+</script>
 <style>
 /* Steady Clock style: forest-green ink, warm paper, mint accents. Dark values come from the Steady Clock privacy page. */
 :root{color-scheme:light dark;--ink:#153d2d;--paper:#f7f6f0;--surface:#ffffff;--muted:#536459;--line:#d4dcd1;--link:#153d2d;--focus:#228657;--chip-bg:#ecf3ec;--chip-ink:#153d2d;--art:#123F32}
@@ -17,7 +29,9 @@ a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
 header,main,footer{max-width:1160px;margin:auto;padding-left:40px;padding-right:40px}
 header{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;padding-top:32px;padding-bottom:32px;border-bottom:1px solid var(--line)}
 .brand{font-size:22px;font-weight:750;letter-spacing:-1px;text-decoration:none;color:var(--ink)}
-nav{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px}
+nav{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;margin-left:auto}
+.lang{font-size:15px;font-weight:600;line-height:1.3;text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:5px 14px}
+.lang:hover{border-color:var(--link)}
 main{padding-top:64px;padding-bottom:72px}
 .project{border:1px solid var(--line);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1.15fr 1fr;background:var(--surface)}
 .project-copy{padding:48px}
@@ -30,11 +44,11 @@ h1{font-size:clamp(40px,5.2vw,64px);line-height:1.1;letter-spacing:-2.5px;font-w
 .project-art{background:var(--art);display:flex;align-items:center;justify-content:center;min-height:360px}
 .project-art img{width:260px;height:260px}
 footer{padding-top:28px;padding-bottom:36px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:14px;color:var(--muted)}
-@media(max-width:700px){header,main,footer{padding-left:24px;padding-right:24px}nav{gap:8px 16px}main{padding-top:40px;padding-bottom:48px}h1{letter-spacing:-1.5px}.project{grid-template-columns:1fr}.project-copy{padding:30px}.project-art{min-height:260px;order:-1}.project-art img{width:220px;height:220px}}
+@media(max-width:700px){header,main,footer{padding-left:24px;padding-right:24px}nav{gap:8px 16px;order:3;flex-basis:100%;margin-left:0}.lang{order:2;margin-left:auto}main{padding-top:40px;padding-bottom:48px}h1{letter-spacing:-1.5px}.project{grid-template-columns:1fr}.project-copy{padding:30px}.project-art{min-height:260px;order:-1}.project-art img{width:220px;height:220px}}
 </style>
 </head>
 <body>
-<header><a class="brand" href="/">SDProjects</a><nav aria-label="Main navigation"><a href="/#products">Products</a><a href="/steady-clock-privacy.html">Privacy policy</a></nav></header>
+<header><a class="brand" href="/">SDProjects</a><nav aria-label="Main navigation"><a href="/#products">Products</a><a href="/steady-clock-privacy.html">Privacy policy</a></nav><a class="lang" href="/steady-clock/es/" hreflang="es" lang="es">Español</a></header>
 <main>
 <article class="project"><div class="project-copy"><span class="status">In preparation for Android</span><p class="eyebrow">Time, without the clutter</p><h1>Steady Clock</h1><p>A world clock, stopwatch and timer with large, familiar controls. Compare time zones, record laps and type a countdown in seconds.</p><p>Works offline. No ads, accounts or subscriptions. Available in English and Spanish.</p><div class="links"><a href="/steady-clock-privacy.html">Privacy policy</a><a href="mailto:sdprojects1985@gmail.com?subject=Steady%20Clock%20support">App support</a></div></div><div class="project-art"><img src="/steady-clock.svg?v=2" width="260" height="260" alt="Steady Clock: mint clock hands with a longer pale-mint minute hand and a forest-green center pivot"></div></article>
 </main>
