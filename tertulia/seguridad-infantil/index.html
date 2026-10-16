@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Estándares de seguridad infantil — Tertulia</title>
 <meta name="description" content="Estándares de seguridad infantil de Tertulia, aplicación independiente de chat en español solo para mayores de 18 años.">
 <link rel="canonical" href="https://sdprojects1985.github.io/tertulia/seguridad-infantil/">
@@ -10,42 +11,50 @@
 <link rel="alternate" hreflang="en" href="https://sdprojects1985.github.io/tertulia/child-safety/">
 <style>
   :root {
-    --bg: #f7f6f3;
-    --surface: #ffffff;
-    --text: #191a1d;
-    --muted: #5a5f68;
-    --accent: #1d6d49;
-    --line: #e3e1db;
+    color-scheme: light dark;
+    --bg: #FBF6EC;
+    --surface: #FFFFFF;
+    --text: #0F2440;
+    --muted: #506179;
+    --line: #E4DACA;
+    --primary: #CC3F29;
+    --brand: #B53622;
+    --soft: #FFE8E2;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #101114;
-      --surface: #17181c;
-      --text: #e6e7ea;
-      --muted: #a6abb4;
-      --accent: #7fd3ac;
-      --line: #2a2d33;
+      --bg: #0F2038;
+      --surface: #182F4D;
+      --text: #EBF2F8;
+      --muted: #A2B6CB;
+      --line: #2C4A6E;
+      --primary: #FF7F6B;
+      --brand: #FF9A8A;
+      --soft: #4A2C3A;
     }
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    padding: 1.5rem 1.25rem 4rem;
+    padding: 0 1.25rem 4rem;
     background: var(--bg);
     color: var(--text);
+    border-top: 5px solid var(--primary);
     font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
   .topnav {
     max-width: 44rem;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
+    padding: 1.25rem 0 1.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: .35rem .75rem;
-    font-size: .92rem;
-    color: var(--muted);
+    justify-content: space-between;
+    gap: .5rem 1.5rem;
   }
-  .topnav .lang { margin-left: auto; }
+  .brand { font-size: 1.2rem; font-weight: 750; letter-spacing: -.03em; color: var(--text); text-decoration: none; }
+  .topnav nav { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; font-size: .92rem; }
+  .topnav nav a[aria-current="page"] { font-weight: 650; }
   main {
     max-width: 44rem;
     margin: 0 auto;
@@ -60,23 +69,28 @@
   .meta { color: var(--muted); font-size: .92rem; margin: 0 0 2rem; }
   .lede {
     font-size: 1.08rem;
-    border-left: 3px solid var(--accent);
+    border-left: 3px solid var(--primary);
     padding: .1rem 0 .1rem 1rem;
     margin: 0 0 1.75rem;
   }
   code { background: var(--bg); padding: .1rem .35rem; border-radius: 5px; font-size: .88em; }
   ul { padding-left: 1.2rem; }
   li { margin: .35rem 0; }
-  a { color: var(--accent); }
-  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  a { color: var(--brand); }
+  a:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
   footer { color: var(--muted); font-size: .88rem; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
 </style>
 </head>
 <body>
-<nav class="topnav" aria-label="Navegación">
-  <a href="/">SDProjects</a><span aria-hidden="true">›</span><a href="/tertulia/">Tertulia</a>
-  <a class="lang" href="/tertulia/child-safety/" hreflang="en" lang="en">English</a>
-</nav>
+<header class="topnav">
+  <a class="brand" href="/">SDProjects</a>
+  <nav aria-label="Navegación">
+    <a href="/tertulia/">Tertulia</a>
+    <a href="/tertulia/privacidad/">Privacidad</a>
+    <a href="/tertulia/seguridad-infantil/" aria-current="page">Seguridad infantil</a>
+    <a class="lang" href="/tertulia/child-safety/" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
 <main>
 
   <h1>Estándares de seguridad infantil de Tertulia</h1>

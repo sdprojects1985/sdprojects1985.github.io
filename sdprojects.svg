@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">SDProjects</title>
+  <desc id="desc">The letters S and D in warm white on an indigo rounded square.</desc>
+  <rect width="256" height="256" rx="57" fill="#3d3a9e"/>
+  <g fill="none" stroke="#f8f7f4" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M112 100C112 86 98 76 84 76C66 76 54 86 54 102C54 118 66 123 84 128C102 133 114 138 114 154C114 170 102 180 84 180C68 180 56 172 54 160"/>
+    <path d="M144 76V180H160C192 180 206 160 206 128C206 96 192 76 160 76Z"/>
+  </g>
+</svg>
